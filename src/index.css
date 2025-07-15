@@ -10,15 +10,6 @@
   z-index: 1;
 }
 
-.scroll-area-gutters.absolute .horizontal-gutter {
-  bottom: 12px;
-  top: unset;
-}
-
-.scroll-area-gutters.absolute .vertical-gutter {
-  bottom: 24px;
-}
-
 .scroll-area::-webkit-scrollbar {
   display: none;
 }
