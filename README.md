@@ -66,7 +66,7 @@ function Demo() {
           alignItems: "stretch",
         }}
       >
-        <ScrollAreaGutters position="absolute" />
+        <ScrollAreaGutters />
         <textarea
           ref={containerDomRef}
           value={value}
@@ -95,6 +95,6 @@ function Demo() {
       </div>
     );
   };
-  return <ScrollArea useContainer={useContainer} />;
+  return <ScrollArea guttersPosition="absolute" useContainer={useContainer} />;
 }
 ```

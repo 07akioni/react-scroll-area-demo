@@ -154,7 +154,7 @@ function Demo2() {
 }
 
 function App() {
-  return <Demo2 />;
+  return <Demo1 />;
 }
 
 export default App;
