@@ -32,7 +32,10 @@ const repeated = (
 
 function Demo1() {
   return (
-    <ScrollArea style={{ height: 200 }} verticalScrollbarMinHeight={16}>
+    <ScrollArea
+      style={{ height: 200, resize: "both" }}
+      verticalScrollbarMinHeight={16}
+    >
       {repeated}
       {repeated}
       {repeated}
@@ -118,7 +121,7 @@ function Demo2() {
           alignItems: "stretch",
         }}
       >
-        <ScrollAreaGutters position="absolute" />
+        <ScrollAreaGutters />
         <textarea
           ref={containerDomRef}
           value={value}
@@ -147,7 +150,7 @@ function Demo2() {
       </div>
     );
   };
-  return <ScrollArea useContainer={useContainer} />;
+  return <ScrollArea guttersPosition="absolute" useContainer={useContainer} />;
 }
 
 function App() {
